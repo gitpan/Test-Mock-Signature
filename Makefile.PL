@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
     "Class::Load" => 0,
     "Data::PatternCompare" => "0.03"
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

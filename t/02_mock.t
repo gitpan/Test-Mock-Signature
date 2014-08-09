@@ -11,7 +11,11 @@ use CONO::Real;
 use CONO::Mock qw| any |;
 
 my $real = CONO::Real->new;
-my $mock = CONO::Mock->new;
+my $mock = CONO::Mock->new(skip_init => 1);
+
+subtest 'constructor parameters' => sub {
+    is($real->test('hello'), 42, 'skip_init available in init()');
+};
 
 subtest 'mock signature with empty params' => sub {
     is($real->test, 42, 'call test before mock');

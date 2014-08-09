@@ -19,4 +19,4 @@ resources:
   bugtracker: https://github.com/cono/p5-test-mock-signature/issues
   homepage: https://github.com/cono/p5-test-mock-signature
   repository: https://github.com/cono/p5-test-mock-signature.git
-version: 0.01
+version: 0.02

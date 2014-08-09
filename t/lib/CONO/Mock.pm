@@ -10,6 +10,7 @@ our $CLASS = 'CONO::Real';
 
 sub init {
     my $mock = shift;
+    return if $mock->{'skip_init'};
 
     $mock->method(test => 'hello')->callback(
         sub {
